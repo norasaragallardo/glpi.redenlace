@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLPI - Inicio de sesión</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/all.min7dbf.css?v=9.4.2" media="all">
+</head>
+<body>
+  <div id="firstboxlogin"><div id="logo_login"></div><div id="text-login"></div><div id="boxlogin">
+    <form id="loginForm" method="post">
+      <p class="login_input" id="login_input_name">
+        <input type="text" name="username" id="login_name" required="required" placeholder="Usuario" autofocus="autofocus">
+      </p>
+      <p class="login_input" id="login_input_password">
+        <input type="password" name="password" id="login_password" required="required" placeholder="Contraseña">
+      </p>
+      <p class="login_input">
+        <label for="login_remember">
+          <input type="checkbox" name="remember" id="login_remember" checked="checked">
+          Recuérdame
+        </label>
+      </p>
+      <p class="login_input">
+        <input type="submit" name="submit" value="Enviar" class="submit">
+      </p>
+      <a id="forget" href="#">¿Olvidó su contraseña?</a>
+    </form>
+    <div id="footer-login" class="home">
+      <a href="http://glpi-project.org/" title="Powered by Teclib and contributors" class="copyright">
+        GLPI Copyright (C) 2015-2019 Teclib' and contributors
+      </a>
+    </div>
+    <div class="error">
+      <noscript>
+        <p>Debe activar Javascript en su navegador</p>
+      </noscript>
+    </div>
+    <div id="display-login"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
