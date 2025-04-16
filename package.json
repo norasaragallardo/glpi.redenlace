@@ -4,7 +4,8 @@
   "description": "Simple login application with MongoDB",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'No build step required for static files'"
   },
   "dependencies": {
     "express": "^4.17.1",
